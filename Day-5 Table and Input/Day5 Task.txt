@@ -1,0 +1,7 @@
+
+
+Create the table with the Attributes and columns 
+
+1. Employee table
+2. Student table 
+3 Food Table
