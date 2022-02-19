@@ -1,0 +1,13 @@
+ Make a contact form base on the requirements: 
+
+ Using the Basic input Tags Make the form 
+
+ 1. Contact Form 
+ 2. Feed back form
+ 3. Admission Form 
+ 4. Banking Form 
+ 5. Medical Form 
+
+ You can give the fields as per your requirements
+
+ Create a form and post the link
