@@ -1,0 +1,12 @@
+h1 {
+    color: rgb(71, 23, 243);
+    border: 10px solid rgb(29, 4, 255);
+    text-align: center;
+    font-size: larger;
+    background-color: black;
+    font-family: cursive;
+
+}
+p{
+    color: green;
+}
