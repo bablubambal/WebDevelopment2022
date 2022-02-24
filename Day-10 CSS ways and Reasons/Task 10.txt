@@ -1,0 +1,5 @@
+1 Make 3 Web pages with the different pages 
+using 3 ways on Syling inside it
+1. inline 
+2. internal and 
+3. external
