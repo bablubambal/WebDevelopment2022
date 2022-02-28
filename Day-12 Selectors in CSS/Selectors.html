@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors IN CSS</title>
+    <style>
+    *{
+        margin: 0;
+        padding:0;
+    }
+
+
+        h1{
+            color: red;
+        }
+        .hello{
+            color: green;
+        }
+        #hi{
+            color: yellow;
+        }
+        #sai{
+            color: blueviolet;
+
+        }
+        .fs{
+            font-size:  50px;
+        }
+        .cls{
+            font-size: 80px;
+        }
+        h3{
+            color: aqua;
+        }
+        #fs{
+            color: aquamarine;
+            /* font-size: 80px; */
+        }
+        #ec{
+            color: blueviolet;
+            /* font-size: 80px; */
+        }
+        #pc{
+            color: brown;
+            /* font-size: 80px; */
+        }
+        h1 ,h2, h3 ,li {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Heading 1
+    </h1>
+    <h2>
+        Heading 2
+    </h2>
+    <h3>
+        Heading 3
+    </h3>
+
+
+    <h1  class="hello" id="hi"  >Hello </h1>
+    <h1 class="hello"  >World!</h1>
+
+    <h3 class="cls" id="fs">Full Stack Class</h3>
+    <ul>
+        <li class="fs">Visesh</li>
+        <li class="fs">Vamshi</li>
+        <li class="fs ec pc " id="sai" > Multiple Class Selector Sai</li>
+        <li class="fs">Likitha</li>
+    </ul>
+    
+    <h3 class="cls" id="ec" >Excel Class</h3>
+    <ul>
+        <li class="fs">Visesh</li>
+        <li class="fs">Vamshi</li>
+        <li class="fs" id="sai" >Sai</li>
+        <li class="fs">Likitha</li>
+    </ul>
+    
+    <h3 class="cls" id="pc">Python Class</h3>
+    <ul>
+        <li class="fs">Visesh</li>
+        <li class="fs">Vamshi</li>
+        <li class="fs" id="sai" >Sai</li>
+        <li class="fs">Likitha</li>
+    </ul>
+    
+    <h3>Selectors in Css</h3>
+    <ol>
+        <li>Tag Selector  tagname{
+            
+        }
+        <ol>
+            <li>h1 h2 h3 h4 h5 h6</li>
+            <li>p li a label div input form table img</li>
+        </ol>
+    </li>
+        <li>Class Selector .classname {} 
+            <ol>
+                <li> any class name class =" anyname "</li>
+            </ol>
+        </li>
+        <li>Id Seletor #idname{}
+            <ol>
+                <li> any id name will be ok Id UNIQUE</li>
+            </ol>
+        </li>
+        <li>Universal selector  *{}</li>
+    </ol>
+
+    <h2>Grouping of Selector : MUltiple Selector used to provide provide Properties</h2>
+</body>
+</html>
