@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletors</title>
+    <style>
+        p{
+            color: red;
+
+        }
+        /* p:hover{
+            background-color: aqua;
+        } */
+        .greenElement{
+            color: green;
+
+        }
+        a{
+            background-color: aqua;
+            padding: 20px;
+            border: 3px solid black;
+            color: brown;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        a:hover{
+            background-color: azure;
+            padding: 25px;
+            color:crimson;
+        }
+        a:visited{
+            background-color: black;
+            color: white;
+        }
+
+        h2:hover{
+            color: red;
+        }
+
+        input{
+            font-size: 20px;
+        }
+        input:focus{
+            background-color: red;
+        }
+       input:checked{
+           background-color: blue;
+           margin: 50px ;
+       }
+       .mypara{
+           color: blueviolet;
+           font-size: 32px;
+       }
+       /* Pseudo Element */
+       .mypara::before{
+           
+           background-color: red;
+           content: '***';
+       }
+       .mypara::after{
+        background-color: red;
+           content: '***';
+
+       }
+       label::after{
+           color: red;
+           content: '*';
+       }
+    
+    </style>
+</head>
+<body>
+    
+
+    <!--  types of Selectors :4
+        0) element selector or tag selector
+     1.Id
+    2.  Cls  -- mostly used Selector
+     3.  Grouping of Selector 
+     4.  Universal *
+    5. Pseudo Selector: -->
+
+     <h2>I am heading 2</h2>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, labore.</p>
+     <p class="greenElement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, labore.</p>
+
+<h2> Pseudo Selector </h2>
+ <ol>
+     <pre>
+         selector : pseudoname{
+             property : value
+         }
+         a: hover{
+             color: "red"
+         }
+         a: visited{
+             color: "black"
+         }
+     </pre>
+ </ol>
+     <a href="https://www.google.com"> Go to Google</a>
+     <a href="https://www.google.com"> Go to Yahoo</a>
+     <h1>Pseudo Cls</h1>
+<ol>
+    <li>hover</li>
+    <li>Visited</li>
+    <li>focus</li>
+    <li>active --> whenever we need to make the link active</li>
+    <li>checked</li>
+</ol>
+
+
+     <input type="text" >
+
+
+     <input type="checkbox">
+
+     <p class="mypara">Lorem ipsum dolor sit amet.</p>
+
+
+     <label for="name">First Name</label>
+     <input type="text">
+
+     <h2>Pseudo Element</h2>
+     <li>
+         :: Before -->before content
+     </li>
+     <li>
+         :: After --> After Content
+     </li>
+    Pseudo Classes:
+    nth-child(n):
+    first-child:
+    last-child:
+    nth-child(odd):
+    nth-child(even)
+</body>
+</html>
