@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+   <style>
+       h1{
+           color: red;
+       }
+       .display{
+           background: rgb(91, 129, 91);
+           /* visibility: hidden; */
+           display: block;
+           /* display: inline; */
+           /* display: inline-block; */
+           /* display: none; */
+       }
+       .parent{
+           color: blue;
+           background-color: yellow;
+           width: 150px;
+           height: 150px;
+       }
+       .child{
+           background-color: aqua;
+           width: 50px;
+           height: 50px;
+           position: relative;
+           top: 10px;
+           left: 20px;
+           right: 5px;
+           bottom: 10px;
+       }
+       .parent1{
+         
+           background-color: rgb(196, 40, 40);
+           width: 150px;
+           height: 150px;
+       }
+       .child1{
+           /* background-color: rgb(122, 103, 187); */
+           width: 50px;
+           height: 50px;
+          position: fixed;
+          top: 85%;
+          left: 90%;
+          border-radius: 10px;
+       }
+       .img:hover{
+           width: 100px;
+           height: 100px;
+           border: 2px solid black;
+           border-radius: 50%;
+        
+       }
+
+       .p1{
+        background-color: rgb(27, 248, 174);
+           width: 150px;
+           height: 150px;
+
+       }
+       .c1{
+           background-color: black;
+        width: 50px;
+           height: 50px;
+          position: absolute;
+          top: 85%;
+          left: 90%;
+          border-radius: 10px;
+
+
+       }
+       .rel{
+           background-color: cornflowerblue;
+           width: 400px;
+           height: 400px;
+           position: relative;
+       }
+   </style>
+</head>
+<body>
+    <h1 class="display">Display Property</h1>
+    <h1>Another h1</h1>
+    <span>I am a span</span>
+    <div>
+        <ol>
+            <li>hello</li>
+            <li>hello</li>
+            
+        </ol>
+    </div>
+
+    <h3>Postiion Propertiers</h3>
+    <ol>
+        <li>static by default all elements have this Postiion</li>
+        <li>relative -> An element with position: relative; is positioned relative to its normal position</li>
+        <li>sticky</li>
+        <li>absolute</li>
+        
+        <li>fixed</li>
+    </ol>
+    
+    <h2>Relative position</h2>
+    <div class="parent">
+        <div class="child">
+        </div>
+    </div>
+    <h2>Fixed position</h2>
+    <div class="parent1">
+        <div class="child1">
+            <img class="img" height="80px" width="80px" src="whatsup.png" alt="">
+        </div>
+    </div>
+
+
+    <h2>Absoulte position</h2>
+    <div class="rel">
+    <div class="p1">
+        <div class="c1">
+            
+        </div>
+    </div>
+    <h2>Sticky position</h2>
+    <div class="rel">
+    <div class="p1">
+        <div class="c1">
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
