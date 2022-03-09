@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .parent{
+            width: 100%;
+            height: 250px;
+            background-color: rgb(245,233,0);
+            display: flex;
+            /* flex direction: Properties */
+            /* flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex wrap properties */
+            /* flex-wrap: nowrap;
+            flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            color: white;
+            /* margin: 0px auto; */
+
+        }
+        .child1{
+            background-color: black;
+        }
+        .child2{
+            background-color: rgb(70, 83, 83);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class=" child child1">1</div>
+        <div class=" child child2">2</div>
+        <div class=" child child1">3</div>
+        <div class=" child child2">4</div>
+    </div>
+    
+</body>
+</html>
