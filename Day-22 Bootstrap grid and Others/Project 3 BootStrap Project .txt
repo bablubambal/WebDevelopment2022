@@ -1,0 +1,10 @@
+Make an E-Commerce Page :
+
+
+1 Login page -> Form of Login
+2. Register Page --> Register Page to Take User Details
+3. Home Page : 
+    Navbar
+    Slider
+    Items -display :
+4. Product Page: To show information of Single Page.
