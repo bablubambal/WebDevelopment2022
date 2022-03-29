@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majic Images</title>
+
+    <style>
+          img{
+            width: 400px;
+            height: 400px;
+            cursor: pointer;
+          
+        }
+        .img{
+            width: 400px;
+            height: 400px;
+            background-image: url("img/a.png");
+            background-size: contain;
+
+        }
+        .img:hover{
+            background-image: url("img/b.png");
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="img">
+
+    </div> -->
+    
+<img onclick="toogle()"  id="myimg" src="img/a.png" alt="">
+<button onclick="changeImg()">Change Image</button>
+<button onclick="prevImg()">Change Image</button>
+<button onclick="toogle()">Ctoogle imge</button>
+
+
+<script>
+console.log("internal js")
+myimg = document.getElementById("myimg")
+
+console.log(myimg)
+
+// Syntax to set the attribut
+// element.setAttribute("class", "democlass");
+
+function changeImg(){
+    myimg.setAttribute("src","img/b.png")
+}
+
+function prevImg(){
+    myimg.setAttribute("src","img/a.png")
+}
+ i = 0;
+// function swithimg(){
+//     if (i ==0){
+//         i = 1
+//     }
+//     else{
+//         i = 0
+//     }
+//     toogle()
+
+// }
+
+function toogle(){
+    if(i ==0){
+        myimg.setAttribute("src","img/a.png")
+         i = 1
+
+    }
+    else{
+        myimg.setAttribute("src","img/b.png")
+        i = 0
+    }
+}
+
+</script>
+
+
+Tasks: 
+<!-- 1 Login or Register function
+2 Light bulb
+3 Mood Changer er Emojiss -->
+
+</body>
+</html>

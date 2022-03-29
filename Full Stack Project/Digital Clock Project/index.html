@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Clock </title>
+</head>
+<body>
+
+   Current time is :   <h1 id="time">
+        23.00
+    </h1>
+    
+</body>
+<script>
+    time = document.getElementById("time")
+    console.log(time)
+
+    function getTime(){
+        d = new Date()
+        ctime = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+        // console.log(d.getHours() ,d.getMinutes() ,d.getSeconds())
+        // console.log(ctime)
+        time.innerHTML = ctime
+    }
+getTime()
+
+
+setInterval(getTime,1000)
+    
+</script>
+
+</html>
