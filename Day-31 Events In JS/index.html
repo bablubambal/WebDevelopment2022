@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+    <style>
+        #id{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body onload="docloaded()">
+    <h1>Events in Java Script</h1>
+    <p> Events is == Action</p>
+    <h2>We have 2 kinds of Events</h2>
+    <ol>
+        <li>Mouse Events
+            <ol>
+                <li>Mouse Over</li>
+                <li>Mouse Left</li>
+                <li>OnClick</li>
+                <li>OnDblClick --> on Double Click</li>
+            </ol>
+        </li>
+        <li>Keyboard Events
+            <ol>
+                <li>OnChange</li>
+                <li>OnKeyDown</li>
+                <li>OnKeyUp</li>
+            </ol>
+        </li>
+    </ol>
+    <button onclick="clickbtn()">Click me</button>
+    <button  ondblclick="dblclick()" >Click me Double</button>
+    <!-- <button  on >Click me Double</button> -->
+    <input type="text" name="" id="input" value="hi" onblur="b()"   onfocus="f()" onkeydown="keyd()"  onchange="myfun(this.value)" >
+    
+
+    <div id="id" onmouseover="mouseOverFunction()" onmouseleave="mouseLeft()">
+
+    </div>
+
+
+    <script src="myjavas.js"></script>
+</body>
+</html>
