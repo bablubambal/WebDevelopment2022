@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+<body>
+    
+    <h2>JQuery</h2>
+    Java Script Library :
+    light weight
+    
+    
+
+
+    <p>jQuery is a <b>fast, small, and feature-rich JavaScript library</b>. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+
+    Ways to JQuery:
+    1 Download the Jquery and Include in you js
+    2. CDN (Content delivery network)
+
+    <hr>
+    <h3>I am para one</h3>
+    <div id="wik">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, enim, qui dolorem placeat dolore quos ullam iusto corporis suscipit soluta numquam rem possimus illo nostrum voluptatibus aspernatur eius ipsam? Aspernatur accusamus impedit dignissimos blanditiis. Minus architecto dicta, rerum alias illum dolorum similique nisi ipsa? Quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti architecto quod praesentium minima ex hic amet repudiandae quo similique tenetur, recusandae ab eum reprehenderit magnam consequuntur illum neque provident? Ex, et modi soluta esse officia voluptatum dolorem accusantium illum ad id quas dolore. Nulla.</div>
+<!-- <button id="hide">hide</button>
+<button id="show">show</button> -->
+<button id="tog">Tooogle it</button>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+
+
+    <script>
+        //JQuery gives you $
+// console.log($)
+// console.log(jQuery)
+
+// Syntax of Jquery: 
+
+//     $("selector").action()
+
+//  a =  $('h3')
+// console.log(a[0].innerHTML ="her")
+
+$('h3').click(function(){console.log("h3 clicked")})
+
+
+//Hide the wik para:
+// $("#wik").click(function(){
+//    $("#wik").hide(this)
+// })
+
+
+$("#hide").click(function(){
+   $("#wik").hide()
+})
+$("#show").click(function(){
+   $("#wik").show()
+})
+
+$("#tog").click(function(){
+    $("#wik").toggle()
+})
+
+
+/**
+ * Events :
+ * 1  Mouse Events : mouseleave mouseenter click dblclick mouseover
+ * 2 key board events: keypress ,key down ,key up
+ * 3 . form event : onfocus onChange onBlur
+ * 4 Windows or document events: window resize, window scrolls
+ * 
+ * /
+ * 
+ */
+$("#wik").dblclick(function(){
+    console.log("double clicked")
+})
+
+$("#wik").mouseenter(function(){
+    console.log("mourse entered")
+})
+$("#wik").mouseleave(function(){
+    console.log("mourse entered left the wik")
+})
+$("#wik").click(function(){
+  $("#wik").animate({height: "300px"});
+  $("#wik").animate({color:"green"});
+});
+
+
+// Selectors in Js
+// $("#id")
+// $(".classname")
+// $("tagname")
+    </script>
+</body>
+</html>
