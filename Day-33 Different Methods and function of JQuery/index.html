@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Function</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</head>
+<body>
+    It simplifies our js code.. 
+    <h1><a href="https://jqueryui.com/widget/">Visit this Site to know more about jQuery</a></h1>
+    <h2>Hello World</h2>
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error eaque blanditiis inventore deleniti nisi officia alias, corporis magni asperiores qui labore earum iusto natus modi repudiandae excepturi rem maiores quas dicta ad vero doloremque sapiente eum libero. Facere rerum error quas, sunt officiis libero atque.</p>
+
+     
+<div id="accordion">
+    <h3>Section 1</h3>
+    <div>
+      <p>
+      Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+      ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+      amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+      odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+      </p>
+    </div>
+    <h3>Section 2</h3>
+    <div>
+      <p>
+      Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+      purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+      velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+      suscipit faucibus urna.
+      </p>
+    </div>
+    <h3>Section 3</h3>
+    <div>
+      <p>
+      Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+      Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+      ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+      lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+      </p>
+      <ul>
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+      </ul>
+    </div>
+    <h3>Section 4</h3>
+    <div>
+      <p>
+      Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+      et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+      faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+      mauris vel est.
+      </p>
+      <p>
+      Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+      inceptos himenaeos.
+      </p>
+    </div>
+  </div>
+   
+   
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+
+console.log($)
+// p = document.getElementById("para")
+// console.log(p)
+// // p.style.display = "none"
+// console.log($("#para")[0])
+// $("#para").hide()
+
+// $("#para").show()
+
+
+// Selector:
+//  1. tag selector $("tagname")
+//  2. class selecot $(".classname")
+//  3. id selector $("#id")
+
+/**
+hide()
+show()
+toogle()
+**/
+
+// $("#para").fadeOut(30000,()=>console.log("done"))
+
+$( function() {
+    $( "#accordion" ).accordion();
+  } );
+
+
+    </script>
+</body>
+</html>
