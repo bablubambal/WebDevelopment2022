@@ -1,0 +1,23 @@
+Task:
+
+
+Make a html page
+
+photo of your friend
+happy birthday wishes
+date of birth
+
+
+how many seconds he has lived till now
+-->days
+-->months
+-->weeks
+
+hint:
+setInterval
+
+
+---------------------------------
+
+Countdown.--> feature
+
