@@ -1,0 +1,14 @@
+{
+  "name": "day-36-node-js-and-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bablu",
+  "license": "ISC",
+  "dependencies": {
+    "pokemon": "^2.3.2"
+  }
+}
