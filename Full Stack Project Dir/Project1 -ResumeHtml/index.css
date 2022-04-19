@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+   
+}
+html{
+    font-size: 62.5%;
+    background-color: red;
+
+}
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 30%;
+        background-color: yellow;
+    }
+  }
+@media screen and (max-width: 960px) {
+    html{
+        font-size: 40%;
+        background-color: green;
+    }
+  }
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1.0rem 1.5rem;
+}
+.brand{
+    font-family: cursive;
+    font-size: 3.5rem;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    
+
+}
+.navbar ul li{
+    margin-right: 2.5rem;
+    font-size: 2.0rem;
+}
+.hero{
+   
+    height: 90vh;
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+
+}
+.left{
+   
+    flex:1;
+    text-align: center;
+    
+
+}
+.left h4{
+    font-size: 4.0rem;
+    
+    color: turquoise;
+
+}
+.left h2{
+    font-size: 8.0rem;
+    
+   font-family: cursive;
+    font-weight: 900;
+
+}
+.left p{
+    font-size: 1.5rem;
+    color: wheat;
+}
+
+
+
+.right{
+    flex: 1;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+   
+    
+}
+.display{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  
+    padding: 2.0rem;
+   
+}
+.item{
+    margin: 1.5rem 2.5rem;
+}
+.item img{
+    width: 20.0rem;
+    height: 20.0rem;
+}
