@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(190, 168, 168);
+}
+
+.myrecipe{
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+li{
+    background-color: red;
+}

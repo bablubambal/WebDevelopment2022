@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend List</title>
+</head>
+<body>
+
+    <input type="text"  id="friend">
+    <button onclick="addfriend()"> Add A Friend</button>
+    <ol id="showfrd">
+        
+    </ol>
+</body>
+
+<script>
+    console.log("Friends")
+    friends = [];
+
+    function addfriend(){
+        let frd = document.getElementById("friend").value
+        // console.log(frd)
+        friends.push(frd)
+        // console.log(friends)
+        // friends.map((friend)=>console.log(friend))
+        showFriends()
+
+    }
+
+
+    function showFriends(){
+        let ul = document.getElementById("showfrd")
+
+        let myfrds = ``;
+        // friends.map((element)=> myfrds = myfrds+`<li>${element}</li>`)
+        friends.forEach(element => {
+            console.log("in for each loop",myfrds)
+            
+            myfrds = myfrds+`<li>${element}</li>`
+        });
+
+        ul.innerHTML = myfrds;
+
+    }
+</script>
+
+</html>
