@@ -1,0 +1,143 @@
+html,
+body {
+	background-color: #dfe7ef;
+	align-items: center;
+	justify-content: center;
+	font-family: "Montserrat", sans-serif;
+	font-family: spotify-circular, spotify-circular-cyrillic,
+		spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, helvetica,
+		arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+}
+
+.thumbnail {
+	width: 145px;
+	height: 145px;
+	border-radius: 50%;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	background: url("https://trevor-reznik.github.io/guides/email-template/4.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+}
+.player {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	user-select: none;
+}
+.player .circle {
+	max-width: 120px;
+}
+.player .circle .active {
+	text-transform: uppercase;
+	animation-name: example;
+	animation: record 3s linear 0s infinite forwards;
+}
+@keyframes record {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+.player .circle .circ {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 15%;
+	top: 30%;
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: 1;
+}
+.player .player-track {
+	background-color: rgb(0, 0, 0);
+	top: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 15px 15px 5px 160px;
+	border-radius: 15px 15px 0px 0px;
+}
+.player .player-track .active {
+	top: -100px;
+}
+.player .player-track .time {
+	font-size: 16px;
+	margin: 5px 0px 20px;
+	height: 6px;
+	color: #b3b3b3; /* secondary text color */
+}
+.player .player-track .progress-bar {
+	background-color: hsla(0, 0%, 100%, 0.3);
+	border-radius: 20px;
+}
+.player .player-track .progress-bar .fillBar {
+	width: 0;
+	height: 6px;
+	border-radius: 20px;
+}
+.player .player-track .artist-name {
+	color: #ffffff; /* primary text color */
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.player .player-track .music-name {
+	color: #b3b3b3; /* secondary text color */
+	font-size: 0.85em;
+	margin-bottom: 20px;
+}
+.player .player-control {
+	background-color: #181818;
+	width: 450px;
+	height: 100px;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0 0.75vh 0.5vw rgba(0, 0, 0, 0.2),
+		0 1.6vh 1.25vw rgba(0, 0, 0, 0.35), 0.02vw -0.1vh rgba(56, 56, 56, 0.514);
+}
+.player .player-control #play {
+	border-radius: 50%;
+}
+.player .player-control i {
+	padding: 30px 8px;
+	font-size: 35px;
+	cursor: pointer;
+	text-align: center;
+}
+.play-btn:before {
+	border-radius: 500px;
+	color: #ffffff;
+	background-color: #1db954;
+	padding: 10px 10px 10px 15px;
+}
+.play-btn:hover:before {
+	filter: brightness(1.08) saturate(1.03);
+	box-shadow: 0 1px #222222;
+}
+.pause-btn:before {
+	border-radius: 500px;
+	color: #ffffff;
+	background-color: #1db954;
+	padding: 10px 10px 10px 10px;
+}
+.pause-btn:hover:before {
+	filter: brightness(1.08);
+	box-shadow: 0 1px #855454b6;
+}
+.next-btn:before {
+	color: rgb(179, 179, 179);
+}
+.next-btn:hover:before {
+	color: #fff;
+}
+.prev-btn:before {
+	color: rgb(179, 179, 179);
+}
+.prev-btn:hover:before {
+	color: #fff;
+}
